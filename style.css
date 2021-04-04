@@ -1,0 +1,364 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT */
+:root {
+  --background-color: #f0d9b5;
+  --primary-color: #b58863;
+  --primary-color-light: #c1b1a4;
+  --complementary-color: #826248;
+  --complementary-blue-light: #b4d3f0;
+  --complementary-blue-dark: #5a80a3;
+  --white: #f1f1f1;
+  --black: #36312e;
+}
+
+/* BODY */
+body {
+  background: var(--background-color);
+  font-family: "Nunito", Helvetica, sans-serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+hr {
+  width: 25%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid var(--primary-color-light);
+}
+
+/* BUTTON */
+.primary-button {
+  background: var(--complementary-blue-light);
+  color: var(--black);
+  padding: 0.5rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid var(--black);
+  transition: 0.3s ease-in-out;
+}
+
+.primary-button:hover {
+  background: var(--complementary-blue-dark);
+  color: var(--white);
+  border: 2px solid var(--complementary-blue-dark);
+}
+
+/* HEADER */
+header {
+  background: var(--primary-color);
+  color: var(--white);
+  width: 100%;
+  height: 5rem;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header li {
+  display: inline-block;
+  position: relative;
+}
+
+header li a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+/* CONTAINER */
+.container {
+  width: 60%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+/* BANNER */
+.hero-banner {
+  width: 100%;
+  height: 50rem;
+  background-image: url(./assets/images/chess-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-banner .container {
+  color: var(--white);
+  background: var(--complementary-color);
+  max-width: 30rem;
+  min-height: 35%;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+}
+
+.hero-banner .container h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--black);
+  padding: 0.5rem 0;
+}
+
+.hero-banner .container div {
+  height: 13rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hero-banner .container p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* ABOUT */
+#about {
+  padding: 2rem;
+  color: var(--black);
+}
+
+#about .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+#about figure {
+  height: 30rem;
+}
+
+#about img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0 10px 10px 0;
+}
+
+#about .container > div {
+  width: 100%;
+  padding: 1rem;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#about p {
+  text-align: left;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+/* EVENTS */
+#events {
+  padding: 2rem;
+}
+
+#events h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#events h3 {
+  text-align: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--white);
+}
+
+#events .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  color: var(--white);
+}
+
+#events .card {
+  width: 25rem;
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  background: var(--primary-color);
+  border-radius: 10px;
+  border: 2px solid var(--background-color);
+}
+
+#events figure {
+  width: 50%;
+  height: 22rem;
+  overflow: hidden;
+  position: relative;
+}
+
+#events img {
+  width: 100%;
+  height: 22rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px 0 0 5px;
+}
+
+.card div {
+  width: 50%;
+  text-align: center;
+}
+
+.card div .hour,
+.card div .date {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+#events button {
+  margin-top: 1rem;
+}
+
+/* CONTACT */
+#contact {
+  padding: 2rem;
+}
+
+#contact .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+#contact .container > div {
+  width: 100%;
+  padding: 1rem;
+}
+
+#contact figure {
+  height: 30rem;
+}
+
+#contact img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0 10px 10px 0;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#contact p {
+  text-align: left;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  background: var(--black);
+  color: var(--white);
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--primary-color);
+}
+
+footer a:hover {
+  color: var(--primary-color-light);
+  text-decoration: none;
+}
+
+/* MEDIA */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 13px;
+  }
+  .container {
+    width: 70%;
+  }
+
+  #events .card p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+  nav {
+    display: none;
+  }
+
+  .container {
+    width: 87%;
+  }
+
+  .hero-banner .container {
+    position: relative;
+    top: 13%;
+    right: 0;
+  }
+
+  #about .container {
+    flex-direction: column-reverse;
+  }
+  #about img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  #events .card {
+    width: 100%;
+  }
+  #events .card p {
+    font-size: 1.25rem;
+  }
+
+  #contact .container {
+    flex-direction: column;
+  }
+  #contact img {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .hero-banner .container {
+    width: 90%;
+  }
+}
